@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom-css -->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="dist/css/responsive.css">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="dist/fontawesome-free-6.4.2-web/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper setting">
+
+<!-- left-sideBar -->
+<div class="sidebar px-4 d-none d-md-block">
+
+    <div class="sidebar-brand text-center pt-5">
+        <img src="./dist/images/logo.png" alt="logo">
+    </div>
+
+    <div class="sidebar-content">
+        <div class="sidebar-admin pt-5">
+            <div class="admin-profile text-center">
+                <img src="./dist/images/admin-profile.png" alt="admin">
+                <h4 class="admin-name text-light">John Doe</h4>
+                <p class="admin-mail">john.doe@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="sidebar-tab pt-5 me-4">
+            <ul>
+                <li class="nav-link mb-3 active">
+                    <a href="dashboard.html" class="d-flex">
+                        <div class="dash-icon"><img src="./dist/images/side-bar/dashboard-icon.svg" alt="Dashbord" class="pe-2"></div>
+                        <div class="dash-title"><h6>Dashbord</h6></div>
+                    </a>
+                </li>
+                <li class="nav-link mb-3">
+                    <a href="my-program.html" class="d-flex">
+                        <div class="dash-icon"><img src="./dist/images/side-bar/my-programs-icon.svg" alt="Dashbord" class="pe-2"></div>
+                        <div class="dash-title"><h6>My Programs</h6></div>
+                    </a>
+                </li>
+                <li class="nav-link mb-3">
+                    <a href="setting.html" class="d-flex">
+                        <div class="dash-icon"><img src="./dist/images/side-bar/setting-icon.svg" alt="Dashbord" class="pe-2"></div>
+                        <div class="dash-title"><h6>Settings</h6></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="sidebar-menu pt-4 pb-5 ps-3">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Resources and articles</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+<!-- right-sideBar -->
+<div class="main-wrapper py-md-5 px-lg-5 px-2 px-md-0">
+<div class="container mx-md-4 pb-4">
+<header class="main-wrapper-header pb-5">
+    <div class="row">
+        <div class="col-md-6 wrapper-header-left pt-4">
+            <h2>My Settings</h2>
+            <p>Lorem ipsum is simple dummy text of the printing and type setting industry.</p>
+        </div>
+        <div class="col-md-6 wrapper-header-left pt-2 d-none">
+            <div class="back-button">
+                <a href="#"><img src="./dist/images/back-button.svg"><span class="back-button-text ms-2">Back</span></a>
+            </div>                                    
+        </div>
+        <div class="col-md-6 wrapper-header-right pt-4 d-flex justify-content-lg-end">
+            <nav class="navbar navbar-expand-md navbar-light pe-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <div class="sidebar d-block d-md-none px-4">
+                        <button class="navbar-toggler close-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="./dist/images/close-button.svg" class="img-fluid close-button-img">
+                        </button>
+
+                        <div class="sidebar-brand text-center pt-5">
+                            <img src="./dist/images/logo.png" alt="logo">
+                        </div>
+            
+                        <div class="sidebar-content">
+                            <div class="sidebar-admin pt-5">
+                                <div class="admin-profile text-center">
+                                    <img src="./dist/images/admin-profile.png" alt="admin">
+                                    <h4 class="admin-name text-light">John Doe</h4>
+                                    <p class="admin-mail">john.doe@gmail.com</p>
+                                </div>
+                            </div>
+            
+                            <div class="sidebar-tab pt-5">
+                                <div class="nav flex-column nav-pills me-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link mb-3 active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                        <img src="./dist/images/side-bar/dashboard-icon.svg" alt="Dashbord" class="pe-2"><h6>Dashbord</h6>
+                                    </button>
+                
+                                    <button class="nav-link mb-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                        <img src="./dist/images/side-bar/my-programs-icon.svg" alt="Dashbord" class="pe-2"><h6>My Programs</h6>
+                                    </button>
+                                    
+                                    <button class="nav-link mb-3" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                        <img src="./dist/images/side-bar/setting-icon.svg" alt="Dashbord" class="pe-2"><h6>Settings</h6>                        
+                                    </button>
+                                    </div>
+                            </div>
+            
+                            <nav class="sidebar-menu pt-4 pb-5 ps-3">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">How it Works</a></li>
+                                    <li><a href="#">Resources and articles</a></li>
+                                    <li><a href="login.html">Logout</a></li>
+                                </ul>
+                            </nav>
+            
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+            <div class="bell pe-4">
+                <img src="./dist/images/bell-icon.svg">
+            </div>
+            <div class="question">
+                <i class="fa-solid fa-circle-question pe-4 question-icon"></i>
+            </div>                            
+            <div class="admin-profile ps-4 d-flex align-items-center">                              
+                <img src="./dist/images/admin-profile.png" alt="admin">
+                <h4 class="admin-name ps-2">John Doe</h4>                        
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="row edit-profile-row">
+    <div class="edit-profile-main d-flex">
+        <div class="setting-left-pannel">
+            <div class="setting-left-pannel-inner py-5 ps-5">
+                <ul class="pt-lg-5">
+                    <li class="pb-5"><a href="setting.html" class="active"><i class="fa-solid fa-user-pen px-3"></i><span>Edit Profile</span></a></li>
+                    <li class="pb-5"><a href="change-password.html"><i class="fa-solid fa-lock px-3"></i><span>Change Password</span></a></li>
+                    <li class="pb-5"><a href="manage-card.html"><i class="fa-solid fa-lock px-3"></i><span>Manage Card</span></a></li>
+                    <li class="pb-5"><a href="notification.html"><i class="fa-solid fa-lock px-3"></i><span>Notification</span></a></li>
+                </ul>            
+            </div>        
+        </div>
+        <div class="setting-right-pannel-inner">
+            <!-- Setting_heading -->
+            <div class="setting-heading pt-5 ps-5">
+                <h3 class="dash-heading pt-3 pb-4">Notification Setting</h3>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="notification-setting ps-5">
+                        <p class="pb-3 notification-heading">Type</p>
+
+                        <div class="notification-main">
+                            <label class="notification-box pb-3"><p>Inbox Massages</p>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="notification-box pb-3"><p>Live Reminder</p>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="notification-box pb-3"><p>Notification</p>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="main-btn text-center">
+                            <a href="#">Update</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+<script src="dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/jquery.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>

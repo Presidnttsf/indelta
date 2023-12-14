@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom-css -->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="dist/css/responsive.css">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="dist/fontawesome-free-6.4.2-web/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper dashboard">
+
+        <!-- left-sideBar -->
+        <div class="sidebar px-5 d-none d-md-block">
+
+            <div class="sidebar-brand text-center pt-5">
+                <img src="./dist/images/logo.png" class="pt-3">
+            </div>
+
+            <div class="sidebar-content">
+                <div class="sidebar-admin pt-5 pb-md-4">
+                    <div class="admin-profile text-center pt-3">
+                        <img src="./dist/images/sidebar-admin-profile.png" alt="admin">
+                        <h4 class="admin-name text-light pt-2">John Doe</h4>
+                        <p class="admin-mail">john.doe@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-tab pt-5">
+                    <ul>
+                        <li class="nav-link mb-4 active">
+                            <a href="dashboard.html" class="d-flex">
+                                <div class="dash-icon"><img src="./dist/images/side-bar/dashboard-icon.svg"
+                                        alt="Dashbord" class="pe-2"></div>
+                                <div class="dash-title">
+                                    <h6>Dashbord</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-link mb-4">
+                            <a href="my-program.html" class="d-flex">
+                                <div class="dash-icon"><img src="./dist/images/side-bar/my-programs-icon.svg"
+                                        alt="Dashbord" class="pe-2"></div>
+                                <div class="dash-title">
+                                    <h6>My Programs</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-link mb-4">
+                            <a href="setting.html" class="d-flex">
+                                <div class="dash-icon"><img src="./dist/images/side-bar/setting-icon.svg" alt="Dashbord"
+                                        class="pe-2"></div>
+                                <div class="dash-title">
+                                    <h6>Settings</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="sidebar-menu pt-4 pb-5 ps-3">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Resources and articles</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!-- right-sideBar -->
+        <div class="main-wrapper py-md-5 px-lg-5 px-2 px-md-0">
+            <div class="container mx-md-4 pb-4">
+
+                <!-- header -->
+                <header class="main-wrapper-header">
+                    <div class="row">
+                        <div class="col-md-6 wrapper-header-left pt-4">
+                            <h2>Dashboard</h2>
+                            <p>Lorem ipsum is simple dummy text of the printing and type setting industry.</p>
+                        </div>
+                        <div class="col-md-6 wrapper-header-left d-none pt-4">
+                            <div class="back-button">
+                                <a href="#"><img src="./dist/images/back-button.svg"><span
+                                        class="back-button-text ms-2">Back</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wrapper-header-right pt-4 d-flex justify-content-lg-end">
+                            <nav class="navbar navbar-expand-md navbar-light pe-4">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                                    <div class="sidebar d-block d-md-none px-4">
+                                        <button class="navbar-toggler close-navbar" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <img src="./dist/images/close-button.svg"
+                                                class="img-fluid close-button-img">
+                                        </button>
+
+                                        <div class="sidebar-brand text-center pt-5">
+                                            <img src="./dist/images/logo.png" alt="logo">
+                                        </div>
+
+                                        <div class="sidebar-content">
+                                            <div class="sidebar-admin pt-5">
+                                                <div class="admin-profile text-center">
+                                                    <img src="./dist/images/admin-profile.png"
+                                                        class="admin-sidebar-img">
+                                                    <h4 class="admin-name text-light">John Doe</h4>
+                                                    <p class="admin-mail">john.doe@gmail.com</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="sidebar-tab pt-5">
+                                                <div class="nav flex-column nav-pills me-4" id="v-pills-tab"
+                                                    role="tablist" aria-orientation="vertical">
+                                                    <button class="nav-link mb-3 active" id="v-pills-home-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                                                        type="button" role="tab" aria-controls="v-pills-home"
+                                                        aria-selected="true">
+                                                        <img src="./dist/images/side-bar/dashboard-icon.svg"
+                                                            alt="Dashbord" class="pe-2">
+                                                        <h6>Dashbord</h6>
+                                                    </button>
+
+                                                    <button class="nav-link mb-3" id="v-pills-profile-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                                                        type="button" role="tab" aria-controls="v-pills-profile"
+                                                        aria-selected="false">
+                                                        <img src="./dist/images/side-bar/my-programs-icon.svg"
+                                                            alt="Dashbord" class="pe-2">
+                                                        <h6>My Programs</h6>
+                                                    </button>
+
+                                                    <button class="nav-link mb-3" id="v-pills-messages-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                                                        type="button" role="tab" aria-controls="v-pills-messages"
+                                                        aria-selected="false">
+                                                        <img src="./dist/images/side-bar/setting-icon.svg"
+                                                            alt="Dashbord" class="pe-2">
+                                                        <h6>Settings</h6>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <nav class="sidebar-menu pt-4 pb-5 ps-3">
+                                                <ul>
+                                                    <li><a href="#">About Us</a></li>
+                                                    <li><a href="#">How it Works</a></li>
+                                                    <li><a href="#">Resources and articles</a></li>
+                                                    <li><a href="login.html">Logout</a></li>
+                                                </ul>
+                                            </nav>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- bell -->
+                            <div class="bell-main">
+                                <div class="bell pe-5">
+                                    <a href="#" class="bell-icon" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal7"><img src="./dist/images/bell-icon.svg"></a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal7" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog modal-dialog-centered">
+                                            <div class="modal-content p-4">
+                                                <a class="" data-bs-dismiss="modal" aria-label="Close"><img
+                                                        src="./dist/images/close-button.svg"
+                                                        class="img-fluid close-button-img"></a>
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
+                                                    <p class="modal-title view-all">View All</p>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="notofication-msg-main">
+                                                        <div class="notofication-msg d-flex align-items-center mb-3">
+                                                            <div class="not-msg-text">
+                                                                <h6 class="pb-2">Lorem Ipsom is simple dummy text of the
+                                                                    printing and typesetting industry.</h6>
+                                                                <p class="minutes">12 Minutes ago</p>
+                                                            </div>
+                                                            <div class="not-msg-icon">
+                                                                <img src="./dist/images/celender-icon.svg"
+                                                                    class="img-fluid celender-icon-img">
+                                                            </div>
+                                                            <div class="not-msg-more ps-3">
+                                                                <i class="fa-solid fa-ellipsis"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="notofication-msg d-flex align-items-center mb-3">
+                                                            <div class="not-msg-text">
+                                                                <h6 class="pb-2">Lorem Ipsom is simple dummy text of the
+                                                                    printing and typesetting industry.</h6>
+                                                                <p class="minutes">12 Minutes ago</p>
+                                                            </div>
+                                                            <div class="not-msg-icon">
+                                                                <img src="./dist/images/massage-icon.svg"
+                                                                    class="img-fluid celender-icon-img">
+                                                            </div>
+                                                            <div class="not-msg-more ps-3">
+                                                                <i class="fa-solid fa-ellipsis"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="notofication-msg d-flex align-items-center mb-3">
+                                                            <div class="not-msg-text">
+                                                                <h6 class="pb-2">Lorem Ipsom is simple dummy text of the
+                                                                    printing and typesetting industry.</h6>
+                                                                <p class="minutes">12 Minutes ago</p>
+                                                            </div>
+                                                            <div class="not-msg-icon">
+                                                                <img src="./dist/images/massage-icon.svg"
+                                                                    class="img-fluid celender-icon-img">
+                                                            </div>
+                                                            <div class="not-msg-more ps-3">
+                                                                <i class="fa-solid fa-ellipsis"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="notofication-msg d-flex align-items-center mb-3">
+                                                            <div class="not-msg-text">
+                                                                <h6 class="pb-2">Lorem Ipsom is simple dummy text of the
+                                                                    printing and typesetting industry.</h6>
+                                                                <p class="minutes">12 Minutes ago</p>
+                                                            </div>
+                                                            <div class="not-msg-icon">
+                                                                <img src="./dist/images/celender-icon.svg"
+                                                                    class="img-fluid celender-icon-img">
+                                                            </div>
+                                                            <div class="not-msg-more ps-3">
+                                                                <i class="fa-solid fa-ellipsis"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question -->
+                            <div class="question">
+                                <a href="faq.html"><img src="./dist/images/question-mark.svg" class="question-img"></a>
+                            </div>
+                            <!-- admin-profile -->
+                            <div class="admin-profile ps-5">
+                                <a href="#" class="d-flex align-items-center dropdown-toggle" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./dist/images/admin-profile.png" class="admin-border-img">
+                                    <h4 class="admin-name ps-2">John Doe</h4>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <div class="dropdown p-4">
+                                        <div class="dropdown-header">
+                                            <h5 class="dropdown-title mb-3">My Profile</h5>
+                                            <a class="" data-bs-dismiss="modal" aria-label="Close"><img
+                                                    src="./dist/images/close-button.svg"
+                                                    class="img-fluid close-button-img"></a>
+                                            <ul>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#"><img
+                                                            src="./dist/images/edit-profile.svg"
+                                                            class="img-fluid edit-profile-img pe-3">Edit Profile</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"><img
+                                                            src="./dist/images/change-password.svg"
+                                                            class="img-fluid change-password-icon pe-3">Change
+                                                        Password</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"><img
+                                                            src="./dist/images/notification-setting.svg"
+                                                            class="img-fluid notification-setting-icon pe-3">Notification
+                                                        Setting</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"><img src="./dist/images/logout.svg"
+                                                            class="img-fluid logout-icon pe-3">Logout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </header>
+
+                <!-- search -->
+                <div class="row">
+                    <div class="dash-search mt-5">
+                        <input placeholder="search for lessons, teachers, instruments">
+                        <span>
+                            <h6 class="dash-sub-heading">Search</h6>
+                            <img src="./dist/images/search-icon.svg" class="img-fluid search-icon-img ps-4">
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Popular Categories -->
+                <div class="row dash-popular-categories text-center">
+                    <h3 class="dash-heading pt-5 pb-3 text-start">Popular Categories</h3>
+                    <div class="col-lg-2 col-md-3 dash-cat pb-4">
+                        <a href="#">
+                            <img src="./dist/images/category/category1.png">
+                            <h6 class="dash-sub-heading">Category</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 dash-cat pb-4">
+                        <a href="#">
+                            <img src="./dist/images/category/category2.png">
+                            <h6 class="dash-sub-heading">Category</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 dash-cat pb-4">
+                        <a href="#">
+                            <img src="./dist/images/category/category3.png">
+                            <h6 class="dash-sub-heading">Category</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 dash-cat pb-4">
+                        <a href="#">
+                            <img src="./dist/images/category/category4.png">
+                            <h6 class="dash-sub-heading">Category</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 dash-cat pb-4">
+                        <a href="#">
+                            <img src="./dist/images/category/category5.png">
+                            <h6 class="dash-sub-heading">Category</h6>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 dash-cat pb-4">
+                        <a href="#">
+                            <img src="./dist/images/category/category6.png">
+                            <h6 class="dash-sub-heading">Category</h6>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Explore Programs -->
+                <div class="row">
+                    <h3 class="dash-heading py-3">Explore Programs</h3>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category1.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category2.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category3.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category4.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- continue where you left -->
+                <div class="row">
+                    <h3 class="dash-heading py-3">Continue where you lefts</h3>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category5.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                </div>
+                                <span>Category Name | 3 Hours total</span>
+                                <div class="explore-card-text-main pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <!-- progress-bar -->
+                                    <div class="progress-main d-flex align-items-center">
+                                        <div class="progress-text"><span>30%</span></div>
+                                        <div class="progress-bg">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category6.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                </div>
+                                <span>Category Name | 3 Hours total</span>
+                                <div class="explore-card-text-main pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <!-- progress-bar -->
+                                    <div class="progress-main d-flex align-items-center">
+                                        <div class="progress-text"><span>30%</span></div>
+                                        <div class="progress-bg">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category1.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                </div>
+                                <span>Category Name | 3 Hours total</span>
+                                <div class="explore-card-text-main pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <!-- progress-bar -->
+                                    <div class="progress-main d-flex align-items-center">
+                                        <div class="progress-text"><span>30%</span></div>
+                                        <div class="progress-bg">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="row">
+                    <h3 class="dash-heading py-3">Recommendations</h3>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category2.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category2.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category3.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category4.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5">
+                                    <h6 class="card-title">Program Name here</h6>
+                                    <h5 class="explore-rate">$1.99</h5>
+                                </div>
+                                <span>Category Name | 3 hours</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                    <div class="explore-card-icon">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Sessions -->
+                <div class="row">
+                    <h3 class="dash-heading py-3">Live Sessions</h3>
+                    <div class="col-lg-3 col-md-6 pe-md-4 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category1.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <a href="#" class="join-btn mt-3 me-3">Join</a>
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5 w-100">
+                                    <h6 class="card-title">Live Title</h6>
+                                    <a href="#" class="live-btn">Live</a>
+                                </div>
+                                <span>Category Name</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 py-4">
+                        <div class="explore-card mt-5">
+
+                            <div class="explore-card-img-top">
+                                <img src="./dist/images/category/category2.png" class="img-fluid explore-img">
+                                <img src="./dist/images/play.svg" class="img-fluid explore-play-img">
+                            </div>
+
+                            <a href="#" class="join-btn mt-3 me-3">Join</a>
+                            <div class="explore-card-body px-3 pt-5 pb-3">
+                                <div class="explore-name d-flex align-items-center justify-content-between pt-5 w-100">
+                                    <h6 class="card-title">Live Title</h6>
+                                    <a href="#" class="live-btn">Live</a>
+                                </div>
+                                <span>Category Name</span>
+                                <div class="explore-card-text-main d-flex align-items-center pt-1">
+                                    <div class="explore-card-text pe-1">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <p class="copy-right text-center pb-4">Indelta International @ Copyright 2022</p>
+        </div>
+    </div>
+
+    <script src="dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>
